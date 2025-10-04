@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lanie Carumba — Projects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:"Segoe UI", Roboto, Arial, sans-serif;
+      background: radial-gradient(900px 400px at 10% 10%, rgba(128,0,0,0.08), transparent 8%),
+                  linear-gradient(180deg,#fff5f7,#fff5f7 45%,#fff5f7 100%);
+      color:#4a1c1c;
+      padding-bottom:60px;
+    }
+    .top-nav{
+      background:rgba(255,255,255,0.96);
+      box-shadow:0 6px 18px rgba(74,28,28,0.06);
+      position:sticky;top:0;z-index:99
+    }
+    .nav-wrap{max-width:1000px;margin:0 auto;padding:10px 20px;display:flex;justify-content:center}
+    .nav{list-style:none;display:flex;gap:8px}
+    .nav a{
+      display:inline-block;padding:10px 16px;border-radius:10px;
+      text-decoration:none;color:#800000;font-weight:600
+    }
+    .nav a.active{
+      color:#b22222;
+      border-bottom:3px solid #b22222
+    }
+
+    .wrap{max-width:1000px;margin:34px auto;padding:18px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{
+      background:#ffffff;
+      border-radius:12px;
+      padding:20px;
+      box-shadow:0 12px 30px rgba(74,28,28,0.06);
+      transition:transform .16s,box-shadow .16s
+    }
+    .card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 22px 46px rgba(74,28,28,0.12)
+    }
+    .card h3{color:#b22222;margin-bottom:8px}
+    .tags{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+    .tag{
+      background:#ffffff;
+      color:#4a1c1c;
+      padding:6px 10px;
+      border-radius:999px;
+      font-weight:600;
+      font-size:.88rem;
+      border:1px solid #b22222;
+    }
+  </style>
+</head>
+<body>
+  <header class="top-nav">
+    <div class="nav-wrap">
+      <ul class="nav" role="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="wrap" aria-labelledby="projects-title">
+    <h2 id="projects-title" style="color:#b22222;margin-bottom:18px">Selected Projects</h2>
+
+    <div class="grid">
+      <article class="card" aria-labelledby="p1">
+        <h3 id="p1">Portfolio Website</h3>
+        <p>A digital portfolio website developed to highlight my projects and technical skills. Built using modern web frameworks with a user-friendly layout.</p>
+        <div class="tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+      </article>
+
+      <article class="card" aria-labelledby="p2">
+        <h3 id="p2">Web Application</h3>
+        <p>A modern web application built to demonstrate full-stack development, including login security, database support, and a mobile-friendly layout.</p>
+        <div class="tags"><span class="tag">Figma</span><span class="tag">UI/UX</span></div>
+      </article>
+
+      <article class="card" aria-labelledby="p3">
+        <h3 id="p3">Mobile App Concept</h3>
+        <p>A mobile application design project that blends usability with sleek visuals, supported by wireframes and interactive prototype models.y</p>
+        <div class="tags"><span class="tag">Node.js</span><span class="tag">MongoDB</span></div>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
